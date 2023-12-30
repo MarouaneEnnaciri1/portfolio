@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+.parent {
+  background-color: rgb(116, 212, 116);
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(116, 212, 116);
+  font-family: sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.header i {
+  display: none;
+}
+.logo {
+  width: 30px;
+}
+ul {
+  display: flex;
+  align-items: center;
+}
+li a {
+  text-decoration: none;
+  color: green;
+  padding: 10px;
+}
+ul li {
+  list-style: none;
+  color: green;
+}
+ul li:first-child {
+  background: green;
+  border-radius: 20px;
+  padding: 10px;
+}
+li a:first-child {
+  color: black;
+}
+
+h1 span:last-child {
+  color: green;
+}
+
+/* end style header */
+
+/* start style body */
+.landing {
+  background-image: url(cce87e2788907b09145c7bc1270b71bc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 80px);
+  position: relative;
+  z-index: 20;
+}
+.landing .text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  color: azure;
+  margin-top: -21px;
+}
+
+.landing h1 {
+  color: #6fff94;
+}
+.landing p {
+  font-size: 18px;
+}
+
+/* small screen */
+@media (max-width: 767px) {
+  .container {
+    width: 750px;
+  }
+  .header {
+    position: relative;
+    align-items: center;
+  }
+  ul {
+    display: none;
+    align-items: center;
+    position: absolute;
+    padding: 5px;
+    right: 0;
+    top: 100px;
+    background-color: chartreuse;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  ul li:first-child {
+    width: 100%;
+  }
+  a:hover {
+    background: white;
+    padding: 4px;
+    border-radius: 20px;
+  }
+  .header i {
+    display: block;
+    font-size: 50px;
+  }
+  .header i:hover + ul {
+    display: block;
+  }
+  .header ul:hover {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium screen */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170 px;
+  }
+}
+
+/* next page */
+/* first */
+.container1 {
+  /* background-color: blue; */
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: grid;
+  /* grid-template-columns: 100px,100px; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+.child1,
+.child2,
+.child3 {
+  background-color: #bed754;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 7px 5px 3px;
+}
+.container1 p {
+  color: black;
+}
+.container1 h1 {
+  color: #750e21;
+}
+.card-projet {
+  font-size: 50px;
+  color: #e3651d;
+}
+
+.text-section {
+  padding: 20px;
+  opacity: 0;
+}
+.title{
+  color: #000;
+  margin: auto 50% ;
+}
+.container1 div {
+  /* margin-left: 200px; */
+  text-align: center;
+}
+/* Project */
+/* first */
+.project{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.projet{
+  height: 100%;
+  width: 100%;
+  background-color: #6fff94;
+  margin: 10px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.projet h1{
+ font-size: 18px;
+ color: black;
+ padding-bottom: 14px;
+}
+.projet img{
+  width: 100%;
+}
+.projet  a {
+ text-decoration: none;
+ background-color: purple;
+ color: chartreuse;
+padding: 8px;
+border-radius: 20px;
+border: 2px solid chartreuse;
+}
+.projet  a:hover{
+  background-color: #750e21;
+  border: 2px solid white;
+}
+.projet {
+  box-shadow: 7px 7px 3px;
+}
+
+
+/* contact us parte */
+.location-parent{
+  display: flex;
+  align-items: center;
+  gap: 20px
+  ;
+}
+.i-color{
+  color: #000;
+}
+.contact div{
+  display: flex;
+  gap: 10px;
+  font-weight: bold;
+}
+
+/* footer Ending */
+footer{
+  background-color: #000;
+  color: white;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer span{
+ color: chartreuse;
+}
+
